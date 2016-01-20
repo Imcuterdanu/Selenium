@@ -14,11 +14,9 @@ logInElem.click()
 
 emailElem = browser.find_element_by_id('session_key-login')
 emailElem.send_keys(userEmail)
-emailElem.submit()
 
+passwordElem = browser.find_element_by_id('session_key-password')
 passwordElem.click()
-passwordElem = browser.find_element_by_id('session_key-password')
 
-passwordElem = browser.find_element_by_id('session_key-password')
 passwordElem.send_keys(userPassword)
-passwordElem.submit()
+emailElem.submit()
