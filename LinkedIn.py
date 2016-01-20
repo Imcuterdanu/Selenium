@@ -12,8 +12,6 @@ browser.get('https://www.linkedin.com/uas/login')
 emailElem = browser.find_element_by_id('session_key-login')
 emailElem.send_keys(userEmail)
 
-passwordElem = browser.find_element_by_id('session_key-password')
+passwordElem = browser.find_element_by_id('session_password-login')
 passwordElem.send_keys(userPassword)
-
-passwordElem.send_keys(userPassword)
-emailElem.submit()
+passwordElem.submit()
